@@ -26,7 +26,7 @@ object Global {
     SessionFactory.concreteFactory = Some(() =>
       Session.create(
         java.sql.DriverManager.getConnection(dbVendor),
-        new MySQLAdapter)
+        new MySQLInnoDBAdapter)
     )
   }
 
